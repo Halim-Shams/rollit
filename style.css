@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    background-color: #393E46;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1.1px;
+    font-size: 2.2rem;
+    margin: 0 0 5px 0;
+}
+
+.player1Score {
+    color: #ff57dd;
+    display: block;
+}
+
+.player2Score {
+    color: #56e6ff;
+    display: block;
+}
+
+h2 {
+    margin: 1rem 0 3rem 0;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.exroll {
+    color: #f9d92f;
+    font-size: 2.8rem;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
+    margin: 0;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 5px 0 #232931;
+    color: #f9d92f;
+}
+
+div {
+    display: inline-block;
+    text-align: center;
+}
+
+img {
+    width: 85%;
+}
+
+strong {
+    cursor: pointer;
+}
+
+
+/* CSS BUTTON */
+
+button {
+    margin: 35px auto;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    touch-action: manipulation;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient( to left, #a08603 0%, #a08603, #a08603 92%, #a08603);
+}
+
+.front {
+    display: inline-block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    color: white;
+    background: #f9d92f;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
+button:hover .front {
+    transform: translateY(-6px);
+    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+button:hover .shadow {
+    transform: translateY(4px);
+    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.welcomeDesk {
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.548);
+    word-spacing: -0.6px;
+}
+
+#footer {
+    margin: 80px 0 10px 0;
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+}
+
+.player1 {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+    display: block;
+    color: #fa20ce;
+}
+
+.player2 {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+    display: block;
+    color: #04acfa;
+}
+
+@media (max-width: 550px) {
+    .welcomeDesk {
+        text-decoration: none;
+        font-family: 'Indie Flower', cursive;
+        color: rgba(255, 255, 255, 0.548);
+        word-spacing: -0.6px;
+    }
+    h2 {
+        margin: 1rem 0 0 0;
+        font-family: 'Bangers', cursive;
+        font-size: 1.4rem;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    .exroll {
+        color: #f9d92f;
+        font-size: 2.2rem;
+    }
+    h1 {
+        font-family: 'Bangers', cursive;
+        letter-spacing: 3px;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        font-size: 2.8rem;
+        text-align: center;
+        text-shadow: 5px 0 #232931;
+        color: #f9d92f;
+    }
+    img {
+        display: inline;
+        width: 100%;
+    }
+    .front {
+        display: inline-block;
+        position: relative;
+        padding: 10px 28px;
+        border-radius: 12px;
+        font-size: 1.9rem;
+        color: white;
+        background: #f9d92f;
+        will-change: transform;
+        transform: translateY(-7px);
+        transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+    }
+    button {
+        font-family: 'Bangers', cursive;
+        margin: 2.8rem auto;
+        display: block;
+        position: relative;
+        border: none;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        outline-offset: 4px;
+        transition: filter 250ms;
+        touch-action: manipulation;
+    }
+    .playerOne {
+        text-align: center;
+        margin: 8px 12px;
+        width: 30%;
+    }
+    .playerTwo {
+        text-align: center;
+        margin: 8px 12px;
+        width: 30%;
+    }
+    .player1 {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 24px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1.5rem;
+        font-weight: 100;
+        display: inline;
+        color: #fa20ce;
+    }
+    .player2 {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 24px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1.5rem;
+        font-weight: 100;
+        display: inline;
+        color: #04acfa;
+    }
+    #footer {
+        margin: 10.5rem 0 0 0;
+        font-family: 'Indie Flower', cursive;
+        color: #ffffffab;
+    }
+}

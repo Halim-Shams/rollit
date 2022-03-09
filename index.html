@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Dicee Game!!!</title>
+</head>
+
+<body>
+    <h2 class="wellcomeMsg">Wellcome <span class="usernameVIP exroll"></span> to <span class="exroll">Roll It!</span> 😌
+    </h2>
+
+    <!-- The dicee and players timeline -->
+    <h1>Roll It!</h1>
+
+
+
+    <!-- Player one Dicee -->
+    <div class="playerOne">
+        <h3 class="player1">You</h3>
+        <h4 class="player1Score"></h4>
+        <img src="images/dice1.png">
+
+    </div>
+
+
+    <!-- Player Two Dicee -->
+    <div class="playerTwo">
+        <h3 class="player2">Computer</h3>
+        <h4 class="player2Score"></h4>
+        <img src="images/dice2.png">
+
+    </div>
+
+
+    <!-- BACKGROUND sound for button -->
+    <audio src="media/diceeSound.mp3"></audio>
+
+
+    <!-- Refresh button "Roll It!" -->
+    <button onclick="play(); refreshPage();">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text"> Roll It!
+        </span>
+    </button>
+
+
+    <!-- Footer -->
+    <p id="footer">Made with ❤️ by <strong title="He made this cute website!😍">Halim Shams</strong></p>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
